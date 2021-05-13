@@ -1,0 +1,695 @@
+*{
+    
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: quicksand;
+    src: url(../Font/Quicksand/Quicksand.ttf);
+}
+#idioma2{
+    visibility: hidden;
+}
+body{
+    font-family: quicksand;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin: 0 auto;
+    
+       
+}
+    header{
+        position: fixed;
+        display: flex;
+        flex-flow: column nowrap;
+        width: 30%;
+        height: 100%;
+        /*background-color:#cac7c3;*/
+    }
+        .idioma{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            font-size: 0.8em;
+            /*margin-left: 20px;*/
+        }
+        .imgId{
+            height: 12px;
+        }
+            .hor{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-right: 5px;
+            }
+            .hor a{
+                text-decoration: none;
+                color: black;
+            }
+            .hor a:hover{
+                color: #eaf0f6;
+            }
+        .capsalera{
+            background-color: white;
+            /*border: 3px solid #362e2e;
+            border-radius: 10px;*/
+            display: flex;
+            /*margin : 20px;*/
+            flex-flow: column nowrap;
+            align-items: center; 
+            align-content: center;
+            justify-content: center;
+            justify-items: center;
+            font-family: 'Sedgwick Ave';
+            font-style: normal;
+            text-align: center;
+            height: 50%;
+            
+        }
+            
+            
+            .presentacio{
+                background: url(../imatges/logotrans.jpg);
+                background-position:center;
+                background-size:cover;/*cover o fill?????*/
+                background-repeat: no-repeat;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .presentacio h1{
+              flex: 3 1 auto;
+                letter-spacing: 0.3em;
+                font-size: 2.5em;
+            }
+            .presentacio h3{
+                flex: 1 1 auto;
+                border: 3px solid red;
+                border-radius: 10px;
+                color: red;
+                letter-spacing: 0.1em;
+                width: 240px;
+                padding: 10px;
+                text-align: center;
+                line-height: 35px;
+                transform: rotate(-20deg);
+                margin-right: 15px;
+                margin-bottom: 50px;
+            }
+        .navPrinc{
+           /* margin: 2px 20px;*/
+            /*background-color:#cac7c3;*/
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            justify-content: flex-start;
+            height: 50%;
+            
+        }
+        .navSec{
+            margin: 0px;
+            border-top: 2px solid #5b5b5b;
+            font-size: 0.7em;
+        }
+        nav li{
+            margin: 15px 0;
+        }
+        nav li a{
+           text-decoration: none;
+           color: black;
+           font-weight: bold;
+        }
+        a:hover{
+            color: #eaf0f6;
+            
+        }
+        .alignNav{
+            display: flex;
+            align-items: center;
+        }
+        .iconId{
+            margin-right: 15px;
+            height: 20px;
+        }
+#enlaceLink{
+    text-decoration: none;
+           color: black;
+
+}
+#enlaceLink:hover{
+    color: #eaf0f6;
+    font-weight: bold;
+    
+}
+
+.columna{
+    position: relative;
+    float: right;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 70%;
+
+}
+    .section{
+        
+        margin-top: 40px;
+        margin-right: 15px;
+        margin-left: 15px;
+        display: flex;
+        flex-flow: column;
+        padding: 20px;
+        
+    }
+    .divisor{
+        margin: 75px auto;
+        width: 85%;
+        border-top: 5px dotted #cac7c3;
+    }
+    .titol{
+        align-self: center;
+        color:#34515e;
+        
+    }
+    .contingut{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items:flex-start;
+        justify-content: center;
+    }
+    .contingutForm{
+        display: flex;
+        flex-flow: row nowrap;
+        
+      
+    }
+    .infoForm{
+
+        margin: 25px 150px;
+        
+    }
+        .articleSobreMi{
+            
+            width: 60%;
+            background-color:white;
+            display: flex;
+            align-self: auto;
+            flex-direction: column;
+            padding: 20px;
+           /* border: 3px solid #362e2e;
+            border-radius: 10px;*/
+            text-align: center;
+        }
+           
+        aside{
+            margin-right: 10px;
+            width: 35%;
+            
+            align-self:center;
+            
+        }
+
+            .personal{
+               /* border: 3px solid #362e2e;
+                border-radius: 10px;*/
+                width: 100%;
+               
+                opacity: 0.65;
+            }
+            .personal:hover{
+                opacity: 1;
+            }
+    .sectionHor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .seccioConeixements{
+        display: flex;
+        flex-direction: column;
+        background-color:white;
+        border: 3px solid #362e2e;
+        border-radius: 10px;
+        justify-content:flex-start;
+        align-items: center;
+        margin: 10px;
+        padding-top: 30px;
+        width: 40%;
+        height: 350px;
+    }
+        .artConeixements{
+            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            
+        }
+        .tecnica{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 15px;
+        }
+            .icono{              
+                width: 50px;  
+            }
+         .seccioConeixements > p{
+             text-align: center;
+             width: 75%;
+         }   
+                                        .section2{
+                                           /* background-color: #eaf0f6;*/
+                                            width: 65%;
+                                            align-self: center;
+                                            align-items: center;
+                                            display: flex;
+                                            flex-flow: column;
+                                            justify-content: center;
+                                            overflow: visible;
+                                              
+                                        }
+                                        
+                                            .pareSlide{
+                                                width: 100%;
+                                                
+                                                justify-content: center;
+                                            }
+                                            .slides{
+                                            }
+                                            .imgCon{
+                                               height: 100%;
+                                                object-fit:contain;
+                                            }
+
+                                               
+                                                .slidesjs-pagination{
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    list-style: none;
+                                                }
+                                               
+                                                .slidesjs-pagination li a{
+                                                    display: inline-block;
+                                                    padding: 10px;
+                                                    text-decoration: none;
+                                                    color: #6d3f18;
+                                                }
+                                                .slides .active{
+                                                    color:yellowgreen;
+                                                }
+                                                .slidesjs-navigation{
+                                                    visibility: hidden;
+                                                }
+
+
+
+
+    .contingutProjecte{
+        display: flex;
+        flex-flow: row wrap;
+        align-content: stretch;
+        justify-content: space-around;
+        font-family: 'Sedgwick Ave';
+                font-style: normal;
+                font-weight: 400;
+    }
+   .projecte{
+       width: 250px;
+       height: 250px;
+       text-align: center;
+       margin:4px;
+       transform: translateX(0);
+      
+   }
+   .projecte:before{
+        content:'';
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 0;
+        height: 0;
+        background: linear-gradient(45deg, #fff 45%, #aaa 50%, #ccc 60%, white);
+        
+        transition-duration: 0.3s;
+   }
+   .projecte:hover:before{
+       width: 100px;
+       height: 100px;
+   }
+    .projecte > a{
+        text-decoration: none;
+        color: black;
+    }
+    .projecte > a:hover{
+        color: red;
+        
+    }
+   .color1{
+    background-color: #e7f150;
+   }
+   .color2{
+    background-color: #fd4db0;
+   }
+   .color3{
+    background-color: #fbae3c;
+   }
+   .subratllat{
+    margin-top: 30%;
+    text-decoration: underline;
+   }
+    .formulario{
+        background-color: white;
+        /*border: 3px solid #362e2e;
+        border-radius: 10px;*/
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+       
+    }
+    form > input{
+        margin-bottom: 5px;
+        padding: 10px;
+        border: 2px solid black;
+        font-family: 'Noto Sans SC';
+        font-style: normal;
+        font-weight: 400;
+    }
+    #buto{
+        background: #cac7c3;
+    }
+    #ftext{
+        margin-bottom: 5px;
+        padding: 10px;
+        border: 2px solid black;
+        font-family: 'Noto Sans SC';
+        font-style: normal;
+        font-weight: 400;
+    }
+li{
+    list-style-type: none;
+}
+
+.aplicacio{
+    text-align: center;
+    
+}
+.program{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pantalla{
+    width: 45%;
+    background-color:white;
+    padding: 20px;
+    border: 3px solid #362e2e;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.imgEscriptori{
+    width: 100%;
+}
+.imgAnd{
+   width: 50%;
+}
+@media all and (max-width: 1290px){
+       
+        .capsalera h1{
+            
+            letter-spacing: 0.3em;
+            font-size: 2.5em;
+        }
+        .capsalera h3{
+            font-size: 0.8em;
+            text-align: center;
+            line-height: 25px;
+            transform: rotate(-20deg);
+            width: 150px;
+        }
+        .articleSobreMi{
+         flex: 1 1 auto;
+        }
+        aside{
+           flex: 1 1 auto;
+            
+        }
+        .sectionHor{
+            flex-direction: column;
+            width: 100%;
+        }
+        .seccioConeixements{
+            width: 100%;
+            margin: 0px;
+            margin-top: 10px;
+
+        }
+}
+@media all and (max-width: 1100px){
+    
+    .presentacio{
+        flex: 3 1 auto;
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+        width: 100%
+    }
+    .presentacio h3{
+        width: 210px;
+        line-height: 15px;
+        transform: rotate(-15deg);
+        margin-top: 0;
+    }
+    .content{
+        font-size: 0.8em;
+        flex: 1 1 auto;
+    }
+    .pantalla > p{
+        font-size: 0.8em;
+    }
+    .contingut{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    aside{
+        width: 50%;
+    }
+    .articleSobreMi{
+        width: 100%;
+    }
+        .section2{
+            width: 85%;
+        }
+        
+
+        
+        .imgCon{
+            height: 100%;
+          
+        }
+
+        
+            .slidesjs-pagination{
+                float: left;
+                list-style: none;
+            }
+            .slidesjs-pagination li{
+                float: left;
+                margin-top: 0;
+            }
+            .slidesjs-pagination li a{
+                display: inline-block;
+                padding: 10px;
+                text-decoration: none;
+            }
+}
+
+@media all and (max-width: 1006px){
+    header{
+        width: 40%;
+      }
+      .columna{
+          width: 60%;
+      } 
+    .capsalera h1{
+           
+        letter-spacing: 0.1em;
+        font-size: 2.0em;
+    }
+    .presentacio h3{
+        font-size: 0.7em;
+        line-height: 15px;
+        width: 150px;
+    }
+    
+}
+@media all and (max-width: 870px){
+    
+      form{
+        width: 100%;
+        padding: 20px;
+    }
+   .pantalla{
+       width: 100%;
+   }
+   
+    .personal{
+        opacity: 1;
+    }
+    .section2{
+        width: 95%;
+    }
+}
+
+@media all and (max-width: 770px){
+    #idioma1{
+        visibility: hidden;
+    }
+    #idioma2{
+        visibility: visible;
+    }
+    .contingut{
+        align-items: center;
+    }
+    header{
+        position: static;
+        width: 100%;
+      }
+      .columna{
+        position: static;
+        width: 100%;
+      }
+     
+    .navPrinc{
+        overflow: hidden;
+        margin: 0px;
+        flex-direction: row;
+        font-size: 0.7em;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navSec li{
+        padding: 2px;;
+    }
+    .iconId{
+        margin-right: 5px;
+        height: 15px;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+     
+    .presentacio h3{
+        font-size: 0.8em;
+    }
+    .capsalera h1{
+        font-size: 2.5em;
+    }
+    aside{
+        
+        align-self:center;
+        width: 50%;
+    }
+    .divisor{
+        margin: 40px auto;
+    }
+}
+@media all and (max-width: 550px){
+    .navPrinc{  
+        font-size: 0.5em;
+    }
+    .navSec{
+        font-size: 0.5em;
+    }
+    nav li{
+        margin: 2px 0;
+        
+    }
+    #gestio, #EcoArts, #videojoc{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .slidesjs-pagination li a{
+        padding: 5px;
+    }
+}
+@media all and (max-width: 400px){
+    header{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    .titol{
+        padding: 0px 20px;
+    }
+
+    .columna{
+        margin-top: 15px;
+        padding: 0px;
+        width: 100%;
+    }
+    .presentacio h3{
+        font-size: 0.7em;
+    }
+    .capsalera h1{
+        font-size: 2.0em;
+    }
+    .section{   
+        margin-top: 50px;
+        margin: 0px; 
+        padding: 0px;
+        width: 100%;
+    }
+    aside{
+        margin:0px;
+    }
+    .contingut{
+        margin: 0px; 
+        padding: 0px;
+        width: 100%;
+    }
+    
+    .content{
+        margin: 0px; 
+        padding: 0px;
+        letter-spacing: 0em;
+        font-size: 0.6em;
+        width: 100%;
+    }
+    .seccioConeixements{
+        padding: 0px;
+    }
+    .seccioConeixements>p{
+        font-size: 0.6em;
+    }
+    form{
+        width: 100%;
+        margin:0px;
+    }
+    
+    .presentacio h3{
+        margin-right: 0px;
+    }
+    .section2{
+        width: 100%;
+    }
+    .slides{
+        width: 100%;
+    }
+    .aplicacio{
+        padding: 10px;
+        font-size: 0.8em;
+    }
+}

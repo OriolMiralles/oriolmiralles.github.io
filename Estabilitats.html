@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="stylesheet" href="fontAwesome/css/fontawesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <!--
+        <div class="idioma">
+            <div class="hor">
+                <a href="#"><img class="imgId" src="imatges/catala.png" /><b>CAT</b></a>
+            </div>
+            <div class="hor">
+                <a href="#"><img class="imgId" src="imatges/castella.png" /><b>CAST</b></a>
+            </div>
+            <div class="hor">
+                <a href="#"><img class="imgId" src="imatges/ingles.png" /><b>ENG</b></a>
+            </div>
+        </div>-->
+        <div class="capsalera">
+
+            <div class="presentacio">
+                <h1>Oriol Miralles Peiron</h1>
+                <h3>DESENVOLUPADOR DE SOFTWARE</h3>
+            </div>
+
+        </div>
+        <nav id="nav" class="navPrinc">
+            <li><a href="index.html#Proj"><img class="iconId" src="imatges/icon/project.png" />TORNAR</a>
+            </li>
+            <div class="navSec">
+                <li><a href="#Gestio">GESTIO DE LES ESTABILITATS DE LABORATORI FARMACEUTIC</a></li>
+                <li><a href="#entrada">APROVACIO I ENTRADA D'ESTABILITATS EN CAMERES</a></li>
+                <li><a href="#ubicacio">CONTROL D'UBICACIONS I UNITATS</a></li>
+                <li><a href="#extraccions">EXTRACCIONS I ESTATS DELS ANALISIS</a></li>
+                <li><a href="#extres">ALGUNS EXTRES</a></li>
+            </div>
+        </nav>
+
+    </header>
+    <div class="columna">
+
+        <section class="section">
+            <h2 id="Gestio" class="titol">GESTIO DE LES ESTABILITATS DE LABORATORI FARMACEUTIC</h2>
+            <div class="aplicacio">
+                <p>Les estabilitats ICH d'un laboratori farmacèutic requereixen del control d'una gran quantitat de
+                    dades diferents i
+                    poder-les relacionar entre sí per tal de permetre als diferents tipus d'usuaris realitzar o no les
+                    accions necessàries
+                    en cada etapa de l'estabilitat. El fluxe habitual d'una estabilitat és l'aprovació de
+                    l'estabilitat,l'entrada dels
+                    productes i els diferents lots, el control de la ubicació i la quantitat dels lots en cada càmera,
+                    la data d'extracció
+                    de les mostres de les càmeres i l'usuari que l'ha realitzat i els anàlisis que se'n deriven així com
+                    l'estat en
+                    que aquests es troben.
+                </p>
+            </div>
+        </section>
+        <div class="divisor"></div>
+
+        <section class="section">
+            <h2 id="entrada" class="titol">APROVACIO I ENTRADA D'ESTABILITATS EN CAMERES</h2>
+            <div class="aplicacio">
+
+                <div class="program">
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/login.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>Login inicial per entrar en l'aplicació. Existeixen diferents tipus d'usuaris amb els que tindrem permisos
+                            per executar un determinat tipus d'accions.
+                        </p>
+                    </div>
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/nuevaStab1.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>Les estabilitats han de ser introduides per un usuari amb permisos. Inicialment s'indica el producte del qual es volen
+                            crear les estabilitats i la quantitat de lots. Anteriorment s'ha de crear el producte afegint els protocols que afecten
+                            l'estabilitat així com els análisis que es poden realitzar.
+                        </p>
+                    </div>
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/nuevaStab2.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>introducció dels lots, dels protocols associats al producte que afecten a l'estabilitat, les cámeres on seran
+                            introduits, els tipus d'anàlisis així com la data prevista d'entrada a càmeres.
+                        </p>
+                    </div>
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/nuevaStab3.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>Completem la informació amb el package del producte, si té un temps inicial per fer anàlisis i 
+                            finalment ens apareix la informació de les càmeres que haguem seleccionat previament amb els temps 
+                            d'anàlisis a escollir.
+                        </p>
+                    </div>
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/nuevaStab4.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>Per últim haurem de seleccionar un usuari que ens revisi la introducció de dades ja que l'estabilitat no 
+                            entrarà al sistema fins que l'usuari no doni l'aprovació.
+                        </p>
+                    </div>
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/nuevaStab5.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>Un cop enviada la nova estabilitat només l'usuari que s'hagi indicat rebrà la informació per poder
+                            revisar les dades i aprovar o no l'estabilitat.
+                        </p>
+                    </div>
+                </div>   
+            </div>
+
+        </section>
+        <section class="section">
+            <h2 id="ubicacio" class="titol">CONTROL D'UBICACIONS I UNITATS</h2>
+            <div class="aplicacio">
+
+                <div class="program">
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/ubi1.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>El dia que entra l'estabilitat en càmeres es controlen les unitats que s'introdueixen ja que almenys ha d'haver-hi
+                            la quantitat que indica el protocol.
+                        </p>
+                    </div>
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/ubi2.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>Un cop s'ha entrar el lot correctament en càmeres ja podem consultar tota la informació referent al lot, unitats
+                            introduides Inicialment, unitats que queden actualment, ubicacions...
+                        </p>
+                    </div>
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/ubi3.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>En la base de dades existeix un inventari de les ubicacions possibles de les càmeres. El programa et permet
+                            seleccionar aquelles ubicacions que estan lliures i afegir el percentatge d'ocupació del lot.
+                        </p>
+                    </div>
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/ubi4.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>La ocupació del lot
+                            també permet fer previsió d'ocupació de la càmera en el temps per a preveure noves entrades en una data determinada
+                            que l'usuari pot introduir.
+                        </p>
+                    </div>
+                </div>   
+            </div>
+
+        </section>
+        <section class="section">
+            <h2 id="extraccions" class="titol">EXTRACCIONS I ESTATS DELS ANALISIS</h2>
+            <div class="aplicacio">
+
+                <div class="program">
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/extraccions1.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>Per a cada lot existeix una taula on es visualitza el temps teòric d'extracció, la data i l'usuari en que s'ha extret
+                            el punt d'anàlisis, les unitats necessàries per cada anàlisis i  el total a extreure.
+                        </p>
+                    </div>
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/extraccions2.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>El detall dels anàlisis ens permet veure quines analítiques formen cada tipus d'anàlisis. Un cop la data
+                            de sortida hagi vençut apareixerà l'opció que permetrà a cada analista indicar si s'ha realitzat l'anàlisis. 
+                            D'aquesta manera es tindrà coneixement actualitzat de les tasques realitzades i les pendents.
+                        </p>
+                    </div>
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/extraccions3.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>L'aplicació ens permet mostrar l'estat dels lots i dels seus anàlisis ja sigui agrupant-los per tipus de producte
+                            o bé pels estats dels lots ("En càmeres", "Esperant anàlisis", "En anàlisis", "Esperant revisió", "En revisió" i 
+                            "Finalitzats"). Segons el tipus d'usuari que entra a l'aplicació, aquest tindrà permís per actualitzar un determinat estat
+                            del lot sempre i quan s'hagi extret el punt d'anàlisis prèviament. Un cop s'actualitza l'estat, la data d'actualització queda registrada. L'aplicació té un apartat d'estadístiques
+                            que ens mostra la mitjana de temps que dura cada fase en general o d'un projecte determinat. 
+                        </p>
+                    </div>
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/extraccions4.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>El control d'anàlisis permet tenir actualitzada les tasques realitzades i conèixer l'estat de cada lot. 
+                        </p>
+                    </div>
+            </div>
+
+        </section>
+        <section class="section">
+            <h2 id="extres" class="titol">ALGUNS EXTRES</h2>
+            <div class="aplicacio">
+
+                <div class="program">
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/extres1.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>Avís de sortida de mostres. A l'entrar a l'aplicació es mostra de manera ràpida les sortides dels lots que s'han de realitzar en els
+                            propers 30 díes.
+                        </p>
+                    </div>
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/extres4.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>Per tenir un control en el temps de les sortides dels lots de càmeres també hi ha un calendari que ens permet
+                            navegar en el temps i visualitzar les sortides de tot el que conté la base de dades.
+                        </p>
+                    </div>
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/extres2.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>El programa conté un sistema de comunicació intern que envia missatges ja sigui a usuaris concrets o bé 
+                            missatges públics que poden ser vistos per tots. Aquests missatges són enviats directament pel programa
+                            quan els usuaris realitzen determinades accions...
+                        </p>
+                    </div>
+                    <div class="pantalla">
+
+                        <div>
+                            <img class="imgEscriptori" src="imatges/Estabilitat/extres3.JPG"
+                                alt="imatge presentació" />
+                        </div>
+                        <p>o bé pels usuaris que escriuen missatges públics o dirigits a un altre usuari determinat.
+                        </p>
+                    </div>
+                    
+            </div>
+
+        </section>
+    <script>
+
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () { myFunction() };
+
+        // Get the navbar
+        var navbar = document.getElementById("nav");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>

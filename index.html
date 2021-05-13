@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="stylesheet" href="fontAwesome/css/fontawesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+
+</head>
+
+<body>  
+    <!--
+    <div id="idioma2" class="idioma">
+        <div class="hor">
+            <a href="#"><img class="imgId" src="imatges/catala.png" /><b>CAT</b></a>
+        </div>
+        <div class="hor">
+            <a href="#"><img class="imgId" src="imatges/castella.png" /><b>CAST</b></a>
+        </div>
+        <div class="hor">
+            <a href="#"><img class="imgId" src="imatges/ingles.png" /><b>ENG</b></a>
+        </div>
+    </div>-->
+
+    <header>
+
+        <div class="capsalera">
+
+            <div class="presentacio">
+                <h1>Oriol Miralles Peiron</h1>
+                <h3>DESENVOLUPADOR DE SOFTWARE</h3>
+            </div>
+
+        </div>
+        <nav id="nav" class="navPrinc">
+            <li class="alignNav"><a href="#SobreMi"><img class="iconId" src="imatges/icon/home.png" />SOBRE MI</a></li>
+            <li class="alignNav"><a href="#Coneixements"><img class="iconId"
+                        src="imatges/icon/coneixements.png" />CONEIXEMENTS</a></li>
+            <li class="alignNav"><a href="#Proj"><img class="iconId" src="imatges/icon/project.png" />PROJECTES</a></li>
+            <li class="alignNav"><a href="#Contact"><img class="iconId" src="imatges/icon/contact.png" />CONTACTE</a>
+            </li>
+        </nav>
+    </header>
+    <div class="columna">
+        <!--
+        <div id="idioma1" class="idioma">
+            <div class="hor">
+                <a href="#"><img class="imgId" src="imatges/catala.png" /><b>CAT</b></a>
+            </div>
+            <div class="hor">
+                <a href="#"><img class="imgId" src="imatges/castella.png" /><b>CAST</b></a>
+            </div>
+            <div class="hor">
+                <a href="#"><img class="imgId" src="imatges/ingles.png" /><b>ENG</b></a>
+            </div>
+        </div>-->
+        <section class="section">
+            
+
+            <div class="contingut">
+
+                <aside>
+                    <img class="personal" src="imatges/foto1.jpg" />
+                </aside>
+
+                <article class="articleSobreMi">
+                    <h2 id="SobreMi" class="titol">SOBRE MI</h2>
+                    <div class="content">
+                        <p>Benvinguts a la meva pàgina personal! Aquí trobareu una mica d'informació sobre qui sóc, els
+                            projectes que he realitzat
+                            i en els que treballo.
+                        </p>
+                    </div>
+                    <div class="content">
+                        <p> Vaig néixer i créixer a Barcelona l'any 1982. Treballo en la indústria farmacèutica i és que
+                            soc Tècnic
+                            Superior en Anàlisis i Control. Després de passar per diferents laboratoris i d'aprendre a
+                            tractar amb dades rellevants
+                            de maneres diferents se'm va fer clara la idea que els processos de tractaments de dades han
+                            de ser eficaços, segurs i productius.
+                            És per tot això que em vaig embrancar en l'aventura de la informàtica i la programació, i és
+                            que qualsevol procés de qualitat que es vulgui
+                            desenvolupar requereix del disseny d'un bon programa de gestió de tota la informació
+                            relacionada.
+                        </p>
+                    </div>
+                    <div class="content">
+                        <p>L'any 2019 començo els estudis de Desenvolupament d'Aplicacions Multiplataforma al Centre
+                            d'Estudis Politècnics de
+                            Barcelona i és aquí on descobreixo que la programació s'acaba convertint també en una nova
+                            afició.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <div class="divisor"></div>
+
+        <section class="section2">
+            <h2 id="Coneixements" class="titol">CONEIXEMENTS</h2>
+            <div class="pareSlide">
+                <div class="slides">
+                    <img class="imgCon" src="imatges/coneixements/Java.JPG">
+                    <img class="imgCon" src="imatges/coneixements/cSharp.JPG">
+                    <img class="imgCon" src="imatges/coneixements/html.JPG">
+                    <img class="imgCon" src="imatges/coneixements/bd.JPG">
+                    <img class="imgCon" src="imatges/coneixements/git.JPG">
+                </div>
+            </div>
+        </section>
+        <script src="js/jquery-1.9.1.min.js"> </script>
+        <script src="js/jquery.slides.js"></script>
+        <script>
+            $(function () {
+                $(".slides").slidesjs({
+                    play: {
+                        active: false,
+                        // [boolean] Generate the play and stop buttons.
+                        // You cannot use your own buttons. Sorry.
+                        effect: "slide",
+                        // [string] Can be either "slide" or "fade".
+                        interval: 4000,
+                        // [number] Time spent on each slide in milliseconds.
+                        auto: true,
+                        // [boolean] Start playing the slideshow on load.
+                        swap: true,
+                        // [boolean] show/hide stop and play buttons
+                        pauseOnHover: false,
+                        // [boolean] pause a playing slideshow on hover
+                        restartDelay: 2500
+                        // [number] restart delay on inactive slideshow
+                    }
+                });
+            });
+        </script>
+
+        <!--
+        <section class="section">
+            <h2 id="Coneixements" class="titol">Coneixements</h2>
+            <div class="sectionHor">
+                <div class="seccioConeixements">
+                    <article class="artConeixements">
+                        <div class="content">
+                            <div class="tecnica">
+                                <img class="icono" id="fotoJava" src="imatges/iconoJava.jpg" />
+                                <p class="textImatge"><b>Java</b></p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="tecnica">
+                                <img class="icono" src="imatges/iconoAndroid.jpg" />
+                                <p class="textImatge"><b>Android</b></p>
+                            </div>
+                        </div>
+
+                    </article>
+                    <p>Aplicacions per a mòbils i tauletes Android utilitzant Android Studio i llenguatge Java amb
+                        programació orientada a objectes. </p>
+                </div>
+                <div class="seccioConeixements">
+                    <article class="artConeixements">
+                        <div class="content">
+                            <div class="tecnica">
+                                <img class="icono" src="imatges/iconoCsharp.jpg" />
+                                <p class="textImatge"><b>C Sharp</b></p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="tecnica">
+                                <img class="icono" src="imatges/puntoNet.jpg" />
+                                <p class="textImatge"><b>Framework .NET</b>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <p>Aplicacions per a PC amb sistemes operatius Windows realitzats amb el Framework .NET i llenguatge
+                        C# amb
+                        programació orientada a objectes. </p>
+                </div>
+                <div class="seccioConeixements">
+                    <article class="artConeixements">
+
+                        <div class="content">
+                            <div class="tecnica">
+                                <img class="icono" src="imatges/iconoHtml.JPG" />
+                                <p class="textImatge"><b>HTML 5</b></p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="tecnica">
+                                <img class="icono" src="imatges/iconoCss.JPG" />
+                                <p class="textImatge"><b>CSS 3</b></p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="tecnica">
+                                <img class="icono" src="imatges/iconoPhp.JPG" />
+                                <p class="textImatge"><b>PHP 7</b></p>
+                            </div>
+                        </div>
+                    </article>
+                    <p>Disseny de pàgines i aplicacions web amb HTML 5, CSS 3 i PHP7. </p>
+                </div>
+                <div class="seccioConeixements">
+                    <article class="artConeixements">
+                        <div class="content">
+                            <div class="tecnica">
+                                <img class="icono" src="imatges/iconoMysql.jpg" />
+                                <p class="textImatge"><b>MySQL</b></p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="tecnica">
+                                <img class="icono" src="imatges/iconoServer.JPG" />
+                                <p class="textImatge"><b>SQL Server</b></p>
+                            </div>
+                        </div>
+                    </article>
+                    <p>Bases de dades MySql en aplicacions web y Sql Server en aplicacions C# utilitzant Orm Entity
+                        Framework. </p>
+                </div>
+                <div class="seccioConeixements">
+                    <article class="artConeixements">
+                        <div class="content">
+                            <div class="tecnica">
+                                <img class="icono" src="imatges/iconoBash.JPG" />
+                                <p class="textImatge"><b>Bash</b></p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="tecnica">
+                                <img class="icono" src="imatges/iconoGit.jpg" />
+                                <p class="textImatge"><b>Git / GitHub</b></p>
+                            </div>
+                        </div>
+                    </article>
+                    <p>Llenguatge Bash per a configurar sistemes Linux i programar scripts. </br> Git per a controlar
+                        les versions del codi
+                        de les aplicacions i GitHub per a compartir el codi en el treball en equip.</p>
+                </div>
+            </div>
+        </section>
+-->
+
+        <div class="divisor"></div>
+        <section class="section">
+            <h2 id="Proj" class="titol">PROJECTES</h2>
+
+            <article>
+                <div class="contingutProjecte">
+                    <div class="projecte color1">
+                        <a href="EcoArts.html">
+                            <p class="subratllat">Videojoc Ecoarts. </p>
+                            <p>Android i .NET</p>
+                        </a>
+                    </div>
+                    <div class="projecte color2">
+                        <a href="Chrysallis.html">
+                            <p class="subratllat">Gestió Events Chrysallis.</p>
+                            <p> Android i .NET</p>
+                        </a>
+                    </div>
+                    <div class="projecte color3">
+                        <a href="Estabilitats.html">
+                            <p class="subratllat">Gestió de les estabilitats de laboratori farmacèutic.</p>
+                            <p> HTML, CSS i PHP</p>
+                        </a>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+
+        <div class="divisor"></div>
+        <h2 id="Contact" class="titol">CONTACTE</h2>
+        <section class="section">
+            
+            <div class="contingutForm">
+                
+                <div class="formulario">
+                    
+                    <form action="forms/contact.php" method="post" role="form" onsubmit="return comprobarFormulario();">
+    
+                        <input placeholder="Nom" type="text" id="fnom" name="name">
+    
+                        <input type="text" id="fmail" name="email" placeholder="Email">
+                        <textarea id="ftext" rows="10" cols="30" name="subject"
+                            placeholder="Escriu aquí el teu missatge..."></textarea>
+                        <input type="submit" id="buto" value="Contacta!">
+                        <div id="error" style="display: none;"></div>
+                    </form>
+                </div>
+                <div class="infoForm">
+                    <li class="alignNav"><img class="iconId" src="imatges/icon/mail.png" /><p>urimipe@gmail.com</p></li>
+                    <li class="alignNav"><img class="iconId" src="imatges/icon/location.png" /><p>Barcelona</p></li>
+                    <li class="alignNav"><img class="iconId" src="imatges/icon/linkedin.png" /><p><a id="enlaceLink" href="https://www.linkedin.com/in/oriol-miralles-021908210" target="_blank">Linkedin</a></p></li>
+                    
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    <script type="text/javascript">
+        function comprobarFormulario() {
+            var ok = true;
+            var nom = document.getElementById("fnom").value;
+            var mail = document.getElementById("fmail").value;
+            var missatge = document.getElementById("ftext").value;
+            var coment;
+            if (nom == "") {
+                ok = false;
+                coment = "Escriu un nom correcte";
+            } else if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail) == false) {
+                ok = false;
+                coment = "Escriu un correu electrònic vàlid";
+            } else if (missatge == "") {
+                ok = false;
+                coment = "Escriu un missatge";
+            }
+            if (ok == false) {
+                var error = document.getElementById("error");
+                error.innerText(coment);
+                // error.style.display(true);
+
+            }
+            console.log(ok);
+
+            return false;
+        }
+
+    </script>
+    <script>
+
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () { myFunction() };
+
+        // Get the navbar
+        var navbar = document.getElementById("nav");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
