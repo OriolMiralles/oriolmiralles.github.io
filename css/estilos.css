@@ -153,7 +153,7 @@ body{
 }
     .section{
         
-        margin-top: 40px;
+        margin-top: 25px;
         margin-right: 15px;
         margin-left: 15px;
         display: flex;
@@ -162,9 +162,9 @@ body{
         
     }
     .divisor{
-        margin: 75px auto;
+        margin: 50px auto;
         width: 85%;
-        border-top: 5px dotted #cac7c3;
+        border-top: 3px solid #cac7c3;
     }
     .titol{
         align-self: center;
@@ -177,17 +177,8 @@ body{
         align-items:flex-start;
         justify-content: center;
     }
-    .contingutForm{
-        display: flex;
-        flex-flow: row nowrap;
-        
-      
-    }
-    .infoForm{
-
-        margin: 25px 150px;
-        
-    }
+    
+    
         .articleSobreMi{
             
             width: 60%;
@@ -360,13 +351,34 @@ body{
     margin-top: 30%;
     text-decoration: underline;
    }
+
+   .contingutForm{
+      
+        display: flex;
+        flex-flow:row;
+        justify-content: space-around;
+
+    }
     .formulario{
         background-color: white;
+        flex: 2 1 auto;
         /*border: 3px solid #362e2e;
         border-radius: 10px;*/
+    }
+    .infoForm{
+        flex: 1 1 auto;
         display: flex;
-        flex-direction: column;
+        flex-flow: column;
+        align-items: center;
+    }
+    .infoForm p{
         width: 50%;
+    }
+    .enllasForm{
+        width: 50%;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
     }
     form{
         display: flex;
@@ -421,6 +433,15 @@ li{
 .imgAnd{
    width: 50%;
 }
+
+footer{
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    background-color: #cac7c3;
+}
+
 @media all and (max-width: 1290px){
        
         .capsalera h1{
@@ -434,6 +455,8 @@ li{
             line-height: 25px;
             transform: rotate(-20deg);
             width: 150px;
+
+
         }
         .articleSobreMi{
          flex: 1 1 auto;
@@ -452,6 +475,7 @@ li{
             margin-top: 10px;
 
         }
+       
 }
 @media all and (max-width: 1100px){
     
@@ -486,31 +510,31 @@ li{
     .articleSobreMi{
         width: 100%;
     }
-        .section2{
-            width: 85%;
-        }
+    .section2{
+        width: 85%;
+    }
+    
+    .imgCon{
+        height: 100%;
         
+    }
 
-        
-        .imgCon{
-            height: 100%;
-          
-        }
-
-        
-            .slidesjs-pagination{
-                float: left;
-                list-style: none;
-            }
-            .slidesjs-pagination li{
-                float: left;
-                margin-top: 0;
-            }
-            .slidesjs-pagination li a{
-                display: inline-block;
-                padding: 10px;
-                text-decoration: none;
-            }
+    .slidesjs-pagination{
+        float: left;
+        list-style: none;
+    }
+    .slidesjs-pagination li{
+        float: left;
+        margin-top: 0;
+    }
+    .slidesjs-pagination li a{
+        display: inline-block;
+        padding: 10px;
+        text-decoration: none;
+    }
+    .contingutForm{
+        width: 90%;
+    }
 }
 
 @media all and (max-width: 1006px){
@@ -520,14 +544,17 @@ li{
       .columna{
           width: 60%;
       } 
-    .capsalera h1{
-           
+    .presentacio{
+    }
+    .presentacio h1{
+        flex: 3 1 auto;   
         letter-spacing: 0.1em;
         font-size: 2.0em;
     }
     .presentacio h3{
         font-size: 0.7em;
         line-height: 15px;
+        
         width: 150px;
     }
     
@@ -551,6 +578,19 @@ li{
 }
 
 @media all and (max-width: 770px){
+    
+    .navSec{
+        border-top: 0px;
+        border-left: 2px solid #5b5b5b;
+        padding-left: 50px;
+        
+    }
+    .fixed-top{
+        z-index: 3;
+    }
+    .fixed-top2{
+        z-index: -1;
+    }
     #idioma1{
         visibility: hidden;
     }
@@ -576,6 +616,8 @@ li{
         font-size: 0.7em;
         justify-content: space-around;
         align-items: center;
+        background-color:#cac7c3;
+        height: auto;
     }
 
     .navSec li{
@@ -623,6 +665,9 @@ li{
     }
     .slidesjs-pagination li a{
         padding: 5px;
+    }
+    .contingutForm{
+        width: 100%;
     }
 }
 @media all and (max-width: 400px){
