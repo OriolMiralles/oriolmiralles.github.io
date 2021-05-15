@@ -601,7 +601,7 @@ footer{
         justify-content: space-around;
         align-items: center;
         background-color:#cac7c3;
-        height: 75px;
+        height: auto;
     }
 
     .navSec li{
