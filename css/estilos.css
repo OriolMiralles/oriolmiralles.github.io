@@ -88,14 +88,14 @@ body{
                 border: 3px solid red;
                 border-radius: 10px;
                 color: red;
-                letter-spacing: 0.1em;
-                width: 240px;
+                letter-spacing: 0.15em;
+                width: 50%;
                 padding: 10px;
                 text-align: center;
-                line-height: 35px;
+                /*line-height: 35px;*/
                 transform: rotate(-20deg);
-                margin-right: 15px;
-                margin-bottom: 50px;
+                margin: 25px;
+                /*margin-bottom: 50px;*/
             }
         .navPrinc{
            /* margin: 2px 20px;*/
@@ -355,31 +355,30 @@ body{
    .contingutForm{
       
         display: flex;
-        flex-flow:row;
-        justify-content: space-around;
-
+        flex-direction:column;
+    }
+    .pInfo{
+        text-align: center;
     }
     .formulario{
         background-color: white;
-        flex: 2 1 auto;
+        width: 80%;
+        margin: 0 auto;
         /*border: 3px solid #362e2e;
         border-radius: 10px;*/
     }
     .infoForm{
-        flex: 1 1 auto;
+        width: 80%;
         display: flex;
-        flex-flow: column;
-        align-items: center;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 50px;
     }
-    .infoForm p{
-        width: 50%;
+    .infoForm li{
+        
     }
-    .enllasForm{
-        width: 50%;
-        display: flex;
-        flex-flow: column;
-        align-items: flex-start;
-    }
+
     form{
         display: flex;
         flex-direction: column;
@@ -452,10 +451,7 @@ footer{
         .capsalera h3{
             font-size: 0.8em;
             text-align: center;
-            line-height: 25px;
             transform: rotate(-20deg);
-            width: 150px;
-
 
         }
         .articleSobreMi{
@@ -475,30 +471,32 @@ footer{
             margin-top: 10px;
 
         }
+        .program{
+            flex-direction: column;
+        }
+        .pantalla{
+            width: 100%;
+        }
+        .imgEscriptori{
+            width: 70%;
+        }
        
-}
+    }      
 @media all and (max-width: 1100px){
     
-    .presentacio{
-        flex: 3 1 auto;
-        flex-direction: column;
-        align-items: flex-start;
-        align-items: center;
-        width: 100%
-    }
+
     .presentacio h3{
-        width: 210px;
-        line-height: 15px;
+
         transform: rotate(-15deg);
-        margin-top: 0;
+    }
+    .presentacio h1{
+        font-size: 1.8em;
     }
     .content{
         font-size: 0.8em;
         flex: 1 1 auto;
     }
-    .pantalla > p{
-        font-size: 0.8em;
-    }
+ 
     .contingut{
         flex-direction: column;
         align-items: center;
@@ -535,6 +533,10 @@ footer{
     .contingutForm{
         width: 90%;
     }
+
+    .infoForm{
+        font-size: 0.75em;
+    }
 }
 
 @media all and (max-width: 1006px){
@@ -544,40 +546,22 @@ footer{
       .columna{
           width: 60%;
       } 
-    .presentacio{
+    
+    .infoForm .iconId{
+        margin-right: 5px;
+        height: 15px;
     }
-    .presentacio h1{
-        flex: 3 1 auto;   
-        letter-spacing: 0.1em;
-        font-size: 2.0em;
+    .capsalera{
+        height: 35%;
     }
-    .presentacio h3{
-        font-size: 0.7em;
-        line-height: 15px;
-        
-        width: 150px;
+    .navPrinc{
+        height: 65%;
     }
     
-}
-@media all and (max-width: 870px){
-    
-      form{
-        width: 100%;
-        padding: 20px;
-    }
-   .pantalla{
-       width: 100%;
-   }
-   
-    .personal{
-        opacity: 1;
-    }
-    .section2{
-        width: 95%;
-    }
 }
 
-@media all and (max-width: 770px){
+
+@media all and (max-width: 900px){
     
     .navSec{
         border-top: 0px;
@@ -608,7 +592,7 @@ footer{
         position: static;
         width: 100%;
       }
-     
+    
     .navPrinc{
         overflow: hidden;
         margin: 0px;
@@ -617,7 +601,7 @@ footer{
         justify-content: space-around;
         align-items: center;
         background-color:#cac7c3;
-        height: auto;
+        height: 75px;
     }
 
     .navSec li{
@@ -632,13 +616,8 @@ footer{
         top: 0;
         width: 100%;
       }
-     
-    .presentacio h3{
-        font-size: 0.8em;
-    }
-    .capsalera h1{
-        font-size: 2.5em;
-    }
+    
+
     aside{
         
         align-self:center;
@@ -651,6 +630,7 @@ footer{
 @media all and (max-width: 550px){
     .navPrinc{  
         font-size: 0.5em;
+        padding: 15px 5px;
     }
     .navSec{
         font-size: 0.5em;
@@ -669,6 +649,13 @@ footer{
     .contingutForm{
         width: 100%;
     }
+    .infoForm{
+        flex-direction: column;
+        align-items: center;
+    }
+    .pantalla > p{
+        font-size: 0.8em;
+    }
 }
 @media all and (max-width: 400px){
     header{
@@ -686,10 +673,18 @@ footer{
         width: 100%;
     }
     .presentacio h3{
-        font-size: 0.7em;
+        font-size: 0.5em;
+        margin-right: 0px;
     }
-    .capsalera h1{
-        font-size: 2.0em;
+    .presentacio h1{
+        font-size: 1.5em;
+    }
+    .navPrinc{  
+        font-size: 0.4em;
+        padding: 15px 2px;
+    }
+    .navSec{
+        font-size: 0.4em;
     }
     .section{   
         margin-top: 50px;
@@ -723,10 +718,7 @@ footer{
         width: 100%;
         margin:0px;
     }
-    
-    .presentacio h3{
-        margin-right: 0px;
-    }
+
     .section2{
         width: 100%;
     }
