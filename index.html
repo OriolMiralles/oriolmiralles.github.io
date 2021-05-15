@@ -284,12 +284,12 @@
                 
                 <div class="formulario">
                     
-                    <form action="forms/contact.php" method="post" role="form" onsubmit="return comprobarFormulario();">
+                    <form action="forms/contact.php" method="post" role="form">
     
-                        <input placeholder="Nom" type="text" id="fnom" name="name">
+                        <input placeholder="Nom" type="text" id="fnom" name="nombre" required>
     
-                        <input type="text" id="fmail" name="email" placeholder="Email">
-                        <textarea id="ftext" rows="10" cols="30" name="subject"
+                        <input type="text" id="fmail" name="email" placeholder="Email" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
+                        <textarea id="ftext" rows="10" cols="30" name="mensaje"
                             placeholder="Escriu aquí el teu missatge..."></textarea>
                         <input type="submit" id="buto" value="Contacta!">
                         <div id="error" style="display: none;"></div>
@@ -335,12 +335,12 @@
             if (ok == false) {
                 var error = document.getElementById("error");
                 error.innerText(coment);
-                // error.style.display(true);
+                error.style.display(true);
 
             }
             console.log(ok);
 
-            return false;
+            return ok;
         }
 
     </script>
